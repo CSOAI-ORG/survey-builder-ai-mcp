@@ -1,20 +1,6 @@
 {
   "name": "survey-builder-ai-mcp",
-  "description": "MEOK AI Labs \u2014 Survey Builder tools for AI agents and LLMs",
-  "vendor": "MEOK AI Labs",
-  "homepage": "https://meok.ai",
-  "repository": "https://github.com/CSOAI-ORG/survey-builder-ai-mcp",
-  "runtime": "python",
-  "entrypoint": "server.py",
-  "tools": [
-    "create_survey"
-  ],
-  "categories": [
-    "Research",
-    "Data Collection"
-  ],
-  "pricing": {
-    "free": "50 calls/day",
-    "pro": "$9/mo"
-  }
+  "description": "Survey Builder Ai Mcp \u2014 Build surveys with logic branching and response analysis.",
+  "version": "1.0.0",
+  "tools": []
 }

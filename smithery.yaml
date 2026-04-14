@@ -1,10 +1,5 @@
 name: survey-builder-ai-mcp
-description: "MEOK AI Labs — Survey Builder tools for AI agents and LLMs"
-vendor: MEOK AI Labs
-homepage: https://meok.ai
-repository: https://github.com/CSOAI-ORG/survey-builder-ai-mcp
-license: MIT
-categories: [Research, Data Collection]
-tags: [survey, questionnaire, form-builder, data-collection, research-tools]
-runtime: python
-entrypoint: server.py
+description: "Survey Builder Ai Mcp \u2014 Build surveys with logic branching and\
+  \ response analysis."
+version: 1.0.0
+tools: []
