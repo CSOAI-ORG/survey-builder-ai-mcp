@@ -1,7 +1,7 @@
 {
   "name": "survey-builder-ai-mcp",
   "version": "1.0.0",
-  "description": "MEOK AI Labs — survey builder MCP Server",
+  "description": "AI-powered survey builder ai MCP server for agents. Supports create survey, validate questions, analyze responses. By MEOK AI Labs.",
   "main": "server.py",
   "mcp": {
     "name": "survey builder",
@@ -9,10 +9,22 @@
     "homepage": "https://meok.ai",
     "repository": "https://github.com/CSOAI-ORG/survey-builder-ai-mcp",
     "runtime": "python",
-    "tags": ["mcp", "mcp-server", "meok-ai-labs", "ai-tools"]
+    "tags": [
+      "mcp",
+      "mcp-server",
+      "meok-ai-labs",
+      "ai-tools"
+    ]
   },
-  "keywords": ["mcp", "mcp-server", "meok-ai-labs"],
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "meok-ai-labs"
+  ],
   "author": "MEOK AI Labs <nicholas@meok.ai>",
   "license": "MIT",
-  "repository": {"type": "git", "url": "https://github.com/CSOAI-ORG/survey-builder-ai-mcp"}
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CSOAI-ORG/survey-builder-ai-mcp"
+  }
 }
