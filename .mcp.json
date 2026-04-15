@@ -1,14 +1,80 @@
 {
   "name": "survey-builder-ai-mcp",
-  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 MEOK AI Labs MCP Server",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Create surveys, validate questions, collect responses, and generate analysis reports.",
   "version": "1.0.0",
   "tools": [
     {
       "name": "create_survey",
-      "description": "Create a survey",
+      "description": "Create a new survey with questions. Optionally specify question types per question.",
       "parameters": {
         "type": "object",
-        "properties": {},
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "questions": {
+            "type": "array"
+          },
+          "description": {
+            "type": "string"
+          },
+          "question_types": {
+            "type": "array"
+          }
+        },
+        "required": [
+          "title",
+          "questions"
+        ]
+      }
+    },
+    {
+      "name": "validate_questions",
+      "description": "Validate survey questions for clarity, bias, leading language, and best practices.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "questions": {
+            "type": "array"
+          }
+        },
+        "required": [
+          "questions"
+        ]
+      }
+    },
+    {
+      "name": "analyze_responses",
+      "description": "Analyze survey responses. Provide either a survey_id (for stored data) or a list of response dicts.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "survey_id": {
+            "type": "string"
+          },
+          "responses": {
+            "type": "array"
+          }
+        },
+        "required": []
+      }
+    },
+    {
+      "name": "generate_report",
+      "description": "Generate a summary report for a survey with key findings and recommendations.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "survey_id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "responses": {
+            "type": "array"
+          }
+        },
         "required": []
       }
     }

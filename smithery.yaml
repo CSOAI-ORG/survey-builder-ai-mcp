@@ -1,7 +1,50 @@
 name: survey-builder-ai-mcp
-description: MEOK AI Labs MCP Server
+description: Create surveys, validate questions, collect responses, and generate analysis
+  reports.
 version: 1.0.0
 tools:
 - name: create_survey
-  description: Create a survey
-  parameters: []
+  description: Create a new survey with questions. Optionally specify question types
+    per question.
+  parameters:
+  - name: title
+    type: string
+    required: true
+  - name: questions
+    type: array
+    required: true
+  - name: description
+    type: string
+    required: false
+  - name: question_types
+    type: array
+    required: false
+- name: validate_questions
+  description: Validate survey questions for clarity, bias, leading language, and
+    best practices.
+  parameters:
+  - name: questions
+    type: array
+    required: true
+- name: analyze_responses
+  description: Analyze survey responses. Provide either a survey_id (for stored data)
+    or a list of response dicts.
+  parameters:
+  - name: survey_id
+    type: string
+    required: false
+  - name: responses
+    type: array
+    required: false
+- name: generate_report
+  description: Generate a summary report for a survey with key findings and recommendations.
+  parameters:
+  - name: survey_id
+    type: string
+    required: false
+  - name: title
+    type: string
+    required: false
+  - name: responses
+    type: array
+    required: false
