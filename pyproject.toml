@@ -22,3 +22,6 @@ Repository = "https://github.com/CSOAI-ORG/survey-builder-ai-mcp"
 [tool.hatch.build.targets.wheel]
 packages = ["."]
 only-include = ["server.py"]
+
+[project.scripts]
+survey_builder_ai_mcp = "server:main"
