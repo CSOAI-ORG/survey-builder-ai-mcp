@@ -1,6 +1,16 @@
 {
   "name": "survey-builder-ai-mcp",
-  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Sovereign AI tools for everyone.",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 MEOK AI Labs MCP Server",
   "version": "1.0.0",
-  "tools": []
+  "tools": [
+    {
+      "name": "create_survey",
+      "description": "Create a survey",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      }
+    }
+  ]
 }

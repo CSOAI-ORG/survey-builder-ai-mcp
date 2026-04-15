@@ -1,4 +1,7 @@
 name: survey-builder-ai-mcp
 description: MEOK AI Labs MCP Server
 version: 1.0.0
-tools: []
+tools:
+- name: create_survey
+  description: Create a survey
+  parameters: []
