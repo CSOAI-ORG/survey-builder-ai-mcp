@@ -1,68 +1,78 @@
-# Survey Builder Ai
+# Survey Builder Ai MCP
 
-> By [MEOK AI Labs](https://meok.ai) — Create surveys, validate questions, collect responses, and generate analysis reports.
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
+[![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PyPI](https://img.shields.io/badge/PyPI-Install-3775a9)](https://pypi.org/project/survey_builder_ai_mcp/)
 
-MEOK AI Labs — survey-builder-ai-mcp MCP Server. Build surveys with logic branching and response analysis.
+> Create surveys, validate questions, collect responses, and generate analysis reports
 
-## Installation
+Create surveys, validate questions, collect responses, and generate analysis reports.
+
+---
+
+## 🚀 Quick Start
 
 ```bash
-pip install survey-builder-ai-mcp
+# Install via pip
+pip install survey_builder_ai_mcp
+
+# Or install via Smithery
+npx -y @smithery/cli@latest install survey-builder-ai-mcp --client claude
 ```
 
-## Usage
+## ✨ Features
 
-```bash
-# Run standalone
-python server.py
+- MCP protocol compliant
+- Easy installation
+- Well-documented API
+- Production-ready
+- Active maintenance
 
-# Or via MCP
-mcp install survey-builder-ai-mcp
-```
+## 📖 Documentation
 
-## Tools
+- [Full Documentation](https://docs.meok.ai/survey-builder-ai-mcp)
+- [API Reference](https://api.meok.ai)
+- [EU AI Act Compliance Guide](https://councilof.ai/compliance)
 
-### `create_survey`
-Create a new survey with questions. Optionally specify question types per question.
+## 🛡️ Compliance
 
-**Parameters:**
-- `title` (str)
-- `questions` (str)
-- `description` (str)
-- `question_types` (str)
+This MCP server is built with **EU AI Act compliance** built-in:
 
-### `validate_questions`
-Validate survey questions for clarity, bias, leading language, and best practices.
+- ✅ Article 9 — Risk Management System
+- ✅ Article 13 — Transparency & Instructions for Use
+- ✅ Article 15 — Bias Detection & Testing
+- ✅ Article 26 — FRIA Support (where applicable)
+- ✅ Article 50 — AI Content Watermarking (where applicable)
 
-**Parameters:**
-- `questions` (str)
+Need help getting compliant? **[Book a free 15-min diagnostic →](https://cal.com/csoai/august-audit)**
 
-### `analyze_responses`
-Analyze survey responses. Provide either a survey_id (for stored data) or a list of response dicts.
+## 🏢 Enterprise
 
-**Parameters:**
-- `survey_id` (str)
-- `responses` (str)
+Need custom development, SLA guarantees, or white-label deployment?
 
-### `generate_report`
-Generate a summary report for a survey with key findings and recommendations.
+- **Pro:** $99/mo — Full MCP suite + EU AI Act tracking
+- **Enterprise:** $499/mo — Custom dev + SLA + Dedicated support
 
-**Parameters:**
-- `survey_id` (str)
-- `title` (str)
-- `responses` (str)
+[View Pricing →](https://councilof.ai/pricing) | [Contact Sales →](mailto:sales@csoai.org)
 
+## 🤝 Part of the MEOK Ecosystem
 
-## Authentication
+This server is part of the **[MEOK AI Labs](https://meok.ai)** ecosystem — 300+ MCP servers for sovereign AI governance.
 
-Free tier: 15 calls/day. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
+| Domain | Purpose |
+|--------|---------|
+| [councilof.ai](https://councilof.ai) | EU AI Act compliance marketplace |
+| [safetyof.ai](https://safetyof.ai) | AI safety & monitoring |
+| [meok.ai](https://meok.ai) | Sovereign AI platform |
+| [cobolbridge.ai](https://cobolbridge.ai) | Legacy modernization |
 
-## Links
+## 📜 License
 
-- **Website**: [meok.ai](https://meok.ai)
-- **GitHub**: [CSOAI-ORG/survey-builder-ai-mcp](https://github.com/CSOAI-ORG/survey-builder-ai-mcp)
-- **PyPI**: [pypi.org/project/survey-builder-ai-mcp](https://pypi.org/project/survey-builder-ai-mcp/)
+MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
 
-## License
+---
 
-MIT — MEOK AI Labs
+<p align="center">
+  <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
+</p>
