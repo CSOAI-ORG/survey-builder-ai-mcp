@@ -1,7 +1,7 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.json",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.CSOAI-ORG/survey-builder-ai-mcp",
-  "description": "AI-powered survey builder ai MCP server for agents. Supports create survey, validate questions, analyze responses. By MEOK AI Labs.",
+  "description": "AI-powered survey builder ai MCP server for agents. Supports create survey, validate questions",
   "version": "1.0.4",
   "repository": {
     "url": "https://github.com/CSOAI-ORG/survey-builder-ai-mcp",
@@ -9,12 +9,13 @@
   },
   "packages": [
     {
-      "registry_type": "pypi",
       "identifier": "survey-builder-ai-mcp",
       "version": "1.0.4",
       "transport": {
         "type": "stdio"
-      }
+      },
+      "registryType": "pypi",
+      "runtimeHint": "python"
     }
   ]
 }
