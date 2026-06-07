@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 [project]
 name = "survey-builder-ai-mcp"
-version = "1.0.4"
+version = "1.0.5"
 description = "AI-powered survey builder ai MCP server for agents. Supports create survey, validate questions, analyze responses. By MEOK AI Labs."
 license = {file = "LICENSE"}
 requires-python = ">=3.10"

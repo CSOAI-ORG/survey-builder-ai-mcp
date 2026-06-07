@@ -1,0 +1,59 @@
+{
+  "name": "survey-builder-ai-mcp",
+  "description": "AI-powered survey builder ai MCP server for agents. Supports create survey, validate questions",
+  "url": "https://proofof.ai/scorecard/survey-builder-ai-mcp.html",
+  "version": "1.0.4",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "create_survey",
+      "name": "Create Survey",
+      "description": "create_survey via survey-builder-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "validate_questions",
+      "name": "Validate Questions",
+      "description": "validate_questions via survey-builder-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "analyze_responses",
+      "name": "Analyze Responses",
+      "description": "analyze_responses via survey-builder-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "generate_report",
+      "name": "Generate Report",
+      "description": "generate_report via survey-builder-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}

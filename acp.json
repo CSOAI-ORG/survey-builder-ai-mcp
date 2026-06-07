@@ -1,0 +1,22 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "survey-builder-ai-mcp",
+    "description": "AI-powered survey builder ai MCP server for agents. Supports create survey, validate questions",
+    "version": "1.0.4",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "survey-builder-ai-mcp"
+      }
+    ],
+    "capabilities": [
+      "create_survey",
+      "validate_questions",
+      "analyze_responses",
+      "generate_report"
+    ]
+  }
+}
