@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 [project]
 name = "survey-builder-ai-mcp"
-version = "1.0.0"
+version = "1.0.4"
 description = "AI-powered survey builder ai MCP server for agents. Supports create survey, validate questions, analyze responses. By MEOK AI Labs."
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
@@ -21,7 +21,7 @@ Homepage = "https://meok.ai"
 Repository = "https://github.com/CSOAI-ORG/survey-builder-ai-mcp"
 [tool.hatch.build.targets.wheel]
 packages = ["."]
-only-include = ["server.py"]
+only-include = ["server.py", "auth_middleware.py"]
 
 [project.scripts]
 survey_builder_ai_mcp = "server:main"

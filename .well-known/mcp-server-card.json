@@ -1,0 +1,25 @@
+{
+  "name": "survey-builder-ai-mcp",
+  "title": "Survey Builder Ai Mcp",
+  "description": "AI-powered survey builder ai MCP server for agents. Supports create survey, validate questions, analyze responses. By MEOK AI Labs.",
+  "version": "1.0.4",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "create_survey"
+    },
+    {
+      "name": "validate_questions"
+    },
+    {
+      "name": "analyze_responses"
+    },
+    {
+      "name": "generate_report"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""MEOK AI Labs — survey-builder-ai-mcp MCP Server. Build surveys with logic branching and response analysis."""
+"""
+MEOK AI Labs — survey-builder-ai-mcp MCP Server. Build surveys with logic branching and response analysis."""
 
 import json
 import uuid
@@ -8,7 +9,6 @@ from collections import defaultdict, Counter
 
 from mcp.server.fastmcp import FastMCP
 import sys, os
-sys.path.insert(0, os.path.expanduser("~/clawd/meok-labs-engine/shared"))
 from auth_middleware import check_access
 
 FREE_DAILY_LIMIT = 15
@@ -32,7 +32,7 @@ def create_survey(title: str, questions: list[str], description: str = "", quest
     """Create a new survey with questions. Optionally specify question types per question."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     survey_id = f"SRV-{uuid.uuid4().hex[:8]}"
@@ -73,7 +73,7 @@ def validate_questions(questions: list[str], api_key: str = "") -> str:
     """Validate survey questions for clarity, bias, leading language, and best practices."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     results = []
@@ -132,7 +132,7 @@ def analyze_responses(survey_id: str = "", responses: list[dict] = [], api_key: 
     """Analyze survey responses. Provide either a survey_id (for stored data) or a list of response dicts."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     data = responses if responses else _responses.get(survey_id, [])
@@ -176,7 +176,7 @@ def generate_report(survey_id: str = "", title: str = "Survey Report", responses
     """Generate a summary report for a survey with key findings and recommendations."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     survey = _store.get(survey_id, {})
@@ -231,5 +231,8 @@ def generate_report(survey_id: str = "", title: str = "Survey Report", responses
     }, indent=2)
 
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+if __name__ == '__main__':
+    main()

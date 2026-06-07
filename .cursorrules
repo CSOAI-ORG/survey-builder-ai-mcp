@@ -1,0 +1,9 @@
+# survey-builder-ai-mcp - Auto-trigger Rules
+
+When the user asks about survey builder, use survey-builder-ai-mcp tools: create_survey, validate_questions, analyze_responses, generate_report
+
+> By [MEOK AI Labs](https://meok.ai) — Create surveys, validate questions, collect responses, and generate analysis reports.
+
+Install: `pip install survey-builder-ai-mcp`
+
+By MEOK AI Labs — MIT licensed.
